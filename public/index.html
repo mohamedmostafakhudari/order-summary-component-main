@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Order summary card</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="text-[16px] bg-paleBlue relative font-redHatDisplay">
+  <section class="min-h-screen grid place-items-center">
+  <!-- card -->
+  <div class="border border-red w-[calc(100%-4rem)] max-w-xs mx-auto rounded-xl overflow-hidden bg-white shadow-xl shadow-brightBlue/10">
+    <!-- image -->
+    <img src="./images/illustration-hero.svg" alt="hero">
+    <!-- card content -->
+    <div class="px-6 my-5 space-y-5">
+      <!-- text -->
+      <div class="text-center space-y-3">
+        <h1 class="text-lg font-bold text-darkBlue">Order Summary</h1>
+        <p class="text-desaturatedBlue text-sm">You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!</p>
+      </div>
+      <!-- plan -->
+      <div class="bg-veryPaleBlue flex justify-between items-center p-4 rounded-md">
+        <!-- col -->
+        <div class="flex space-x-3 items-center">
+            <!-- icon -->
+            <img src="./images/icon-music.svg" alt="music" class="w-10">
+            <!-- content -->
+            <div class="">
+              <p class="font-bold text-sm text-darkBlue">Annual Plan</p>
+              <p class="text-desaturatedBlue text-sm">$59.99/year</p>
+            </div>
+        </div>
+       <!-- col -->
+        <div>
+         <!-- change -->
+        <a href="#" class="block text-blue-700 underline text-xs ease-in-out duration-300 hover:text-brightBlue hover:no-underline">Change</a>
+        </div>
+      </div>
+      <!-- cta -->
+      <div class="relative group">
+        <a href="#" class="flex items-center justify-center py-2 text-sm w-full rounded-lg text-white bg-brightBlue shadow-xl shadow-brightBlue/30">Proceed to Payment</a>
+        <!-- hover state bg -->
+        <div class="absolute bg-paleBlue/0 ease-in-out duration-300 inset-0 rounded-lg cursor-pointer group-hover:bg-paleBlue/40"></div>
+      </div>
+      <!-- cancel -->
+      <button class="block mx-auto text-desaturatedBlue font-bold text-sm ease-in-out duration-300 hover:text-darkBlue">Cancel Order</button>
+    </div>
+  </div>
+</section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mohamed Mostafa</a>.
+  </div>
+</body>
+</html>
